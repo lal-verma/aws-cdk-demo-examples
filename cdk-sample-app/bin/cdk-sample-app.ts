@@ -3,41 +3,15 @@ import * as cdk from 'aws-cdk-lib';
 
 const app = new cdk.App({});
 
+// Uncomment this to deploy the demo for ECS Fargate
 /* import {TodoServiceStack} from '../lib/examples/SampleECSFargate'
 new TodoServiceStack(app,'todo-service-stack');
  */
 
+// Uncomment this to deploy the demo for ECS EC2
 /* import {TodoServiceStack} from '../lib/examples/SampleECSEC2'
 new TodoServiceStack(app,'todo-service-stack');
  */
-
-import {SampleEKSCluster} from '../lib/examples/SampleEKSCluster'
-new SampleEKSCluster(app,'sample-eks-cluster');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //uncomment below to enable removalpolicy demo
 /* import {RemovalPolicyStack} from '../lib/resources/removal-policy-stack';
@@ -48,9 +22,6 @@ new RemovalPolicyStack(app, 'RemovalPolicyStack', {});
 const tagsDemoStack = new TagsDemoStack_1(app, 'TagsDemoStack', {});
 
  */
-
-
-
 
 // Uncomment this to deploy the demo for Aspects
 /* import { AspectsDemoStack } from '../lib/aspects/AspectsDemoStack'; 
