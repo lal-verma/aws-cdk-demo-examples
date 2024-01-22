@@ -14,3 +14,4 @@ export class BucketEncryptionAspect implements cdk.IAspect {
       }
     }
 }
+
