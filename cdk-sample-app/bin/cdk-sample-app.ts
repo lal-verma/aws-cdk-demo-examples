@@ -3,6 +3,38 @@ import * as cdk from 'aws-cdk-lib';
 
 const app = new cdk.App({});
 
+import {SampleRedshiftStack} from '../lib/examples/SampleRedshift';
+new SampleRedshiftStack(app, 'SampleRedshiftServerless', {});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import {EscapeHatchSample} from '../lib/escape-hatch/escape-hatch-sample';
+// new EscapeHatchSample(app, 'EscapeHatchSampleStack');
+
 // Uncomment this to deploy the demo for ECS Fargate
 /* import {TodoServiceStack} from '../lib/examples/SampleECSFargate'
 new TodoServiceStack(app,'todo-service-stack');
@@ -24,9 +56,9 @@ const tagsDemoStack = new TagsDemoStack_1(app, 'TagsDemoStack', {});
  */
 
 // Uncomment this to deploy the demo for Aspects
-/* import { AspectsDemoStack } from '../lib/aspects/AspectsDemoStack'; 
-new AspectsDemoStack(app, 'AspectsDemoStack', {});
- */
+// import { AspectsDemoStack } from '../lib/aspects/AspectsDemoStack'; 
+// new AspectsDemoStack(app, 'AspectsDemoStack', {});
+
 
 
 
@@ -94,13 +126,27 @@ new MicroserviceAStack(app, 'microservice-A-stack', {});
 new MicroserviceBStack(app, 'microservice-B-stack', {});
  */
 
-/* // Uncomment this to deploy the first cdk stack.
-import { CdkSampleAppStack } from '../lib/my-first-cdk/cdk-sample-app-stack';
-new CdkSampleAppStack(app, 'CdkSampleAppStack', {
-  env: {
-    account: '123456789',
-    region: 'ap-south-1'
-  }
-}); */
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Uncomment this to deploy the first cdk stack.
+// import { CdkSampleAppStack } from '../lib/my-first-cdk/cdk-sample-app-stack';
+// new CdkSampleAppStack(app, 'CdkSampleAppStack', {
+//   env: {
+//     account: '123456789',
+//     region: 'ap-south-1'
+//   }
+// });
+
 
 app.synth();
