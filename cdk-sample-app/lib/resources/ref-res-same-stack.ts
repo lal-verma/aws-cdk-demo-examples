@@ -33,6 +33,6 @@ export class RRStack extends cdk.Stack {
     
     todo_db.grantReadWriteData(todo_service_function);
 
-    apigateway.RestApi
+
   }
 }
